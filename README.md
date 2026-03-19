@@ -66,15 +66,15 @@ return [
 ];
 ```
 4. Asegúrate que la carpeta uploads/ tenga permisos de escritura
-```
+```bash
  chmod -R 775 uploads/
-# O si estás en Windows (XAMPP/WAMP), hazlo manualmente desde el explorador o con icacls
+# O si estás en Windows (XAMPP/WAMP), hazlo manualmente desde el explorador o con
 ```
 5. Abre en el navegador: http://localhost/mediaXm/public/ (o la ruta donde lo pusiste)
 
 Uso básico
 
--Accede a index.php
--Sube archivos desde el formulario
--Visualiza la lista de medios subidos
+- Accede a index.php
+- Sube archivos desde el formulario
+- Visualiza la lista de medios subidos
 
