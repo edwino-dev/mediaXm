@@ -71,6 +71,7 @@ Ideal para aprender arquitectura limpia en PHP puro y patrones GoF (Gang of Four
 
    ```bash
    chmod -R 775 uploads/
+------------------------------------------------------
 
 5. Abre en el navegador: http://localhost/mediaXm/public/ (o la ruta donde lo pusiste)
 
