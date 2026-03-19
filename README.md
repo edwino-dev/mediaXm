@@ -54,7 +54,7 @@ Ideal para aprender arquitectura limpia en PHP puro y patrones GoF (Gang of Four
    ```bash
    mysql -u root -p < schema.sql
    
-3. Configura la conexión en config/database.phpPHP
+3. Configura la conexión en config/database.php
 
  ```bash
    <?php
