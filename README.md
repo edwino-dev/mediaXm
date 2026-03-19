@@ -6,7 +6,8 @@ Diseñado con fines **educativos** y para demostrar la aplicación práctica de 
 ![PHP](https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=flat&logo=php)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 ![MIT](https://img.shields.io/badge/license-MIT-green?style=flat)
-![Status]https://img.shields.io/badge/status-active-success?style=flat)
+![Status](https://img.shields.io/badge/status-active-success?style=flat)
+
 ```
 
 
