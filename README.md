@@ -6,7 +6,7 @@ Sistema sencillo en PHP para organizar, subir, visualizar y gestionar música, v
 ![PHP](https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=flat&logo=php)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 
-Estructura del proyecto
+**Estructura del proyecto
 textmediaXm/
 ├── config/          → Configuración (DB, rutas, etc.)
 ├── models/          → Entidades y consultas a base de datos
