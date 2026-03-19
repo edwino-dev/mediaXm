@@ -3,18 +3,12 @@
 Sistema ligero en **PHP** para organizar, subir, visualizar y gestionar música, videos e imágenes.  
 Diseñado con fines **educativos** y para demostrar la aplicación práctica de **patrones de diseño GoF** en un contexto real.
 
-[`https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=flat&logo=php`  
-`https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white`  
-`https://img.shields.io/badge/license-MIT-green?style=flat`  
-`https://img.shields.io/badge/status-active-success?style=flat`
-
----](https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=flat&logo=php
+https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=flat&logo=php
 https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white
 https://img.shields.io/badge/license-MIT-green?style=flat
 https://img.shields.io/badge/status-active-success?style=flat
 
 
-)
 
 ## 🚀 Características principales
 - Subida y almacenamiento seguro de **archivos multimedia** (imágenes, audio, video).  
