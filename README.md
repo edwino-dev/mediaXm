@@ -9,12 +9,24 @@ Sistema sencillo en PHP para organizar, subir, visualizar y gestionar música, v
 **Estructura del proyecto**
 ```
 mediaXm/
-├── config/          → Configuración (DB, rutas, etc.)
-├── models/          → Entidades y consultas a base de datos
-├── patterns/        → Implementaciones de patrones de diseño
-├── uploads/         → Archivos multimedia subidos
-├── public/          → (recomendado) index.php + assets
-├── schema.sql       → Estructura de tablas MySQL
+├── index.php               # Pagina principal
+├── css/
+│   └── styles.css          # Estilos completos
+├── config/
+    └── database.php          → Configuración (DB, rutas, etc.)
+├── models/
+     └──archivo.php           → Entidades y consultas a base de datos
+├── patterns/
+    ├──adapter.php
+    ├──decorator.php
+    ├── observer.php
+    └── strategy.php         → Implementaciones de patrones de diseño
+├── uploads/
+   └──images/
+       music/
+       video/              → Archivos multimedia subidos
+├── mediaManager.php       
+├── schema.sql             → Estructura de tablas MySQL
 └── README.md
 ```
 ## ¿Qué es mediaXm?
