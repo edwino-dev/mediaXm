@@ -16,7 +16,7 @@ mediaXm/
 ├── public/          → (recomendado) index.php + assets
 ├── schema.sql       → Estructura de tablas MySQL
 └── README.md
-
+```
 ## ¿Qué es mediaXm?
 
 Un gestor de medios ligero y educativo que permite:
