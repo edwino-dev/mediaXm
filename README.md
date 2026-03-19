@@ -7,7 +7,7 @@ Sistema sencillo en PHP para organizar, subir, visualizar y gestionar música, v
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 
 **Estructura del proyecto**
-
+```
 mediaXm/
 ├── config/          → Configuración (DB, rutas, etc.)
 ├── models/          → Entidades y consultas a base de datos
