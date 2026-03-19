@@ -44,6 +44,37 @@ Ideal para aprender arquitectura limpia en PHP puro y patrones GoF (Gang of Four
 ## Instalación
 
 1. Clona el repositorio
+
    ```bash
    git clone https://github.com/edwino-dev/mediaXm.git
    cd mediaXm
+   
+2. Crea la base de datos y ejecuta el esquema
+
+   ```bash
+   mysql -u root -p < schema.sql
+   
+3. Configura la conexión en config/database.phpPHP
+
+<?php
+   
+return [
+    'host'     => 'localhost',
+    'dbname'   => 'media_xm',
+    'user'     => 'root',
+    'password' => '',
+    'charset'  => 'utf8mb4',
+];
+
+4. Asegúrate que la carpeta uploads/ tenga permisos de escritura
+
+```bash
+chmod -R 775 uploads/
+
+5. Abre en el navegador: http://localhost/mediaXm/public/ (o la ruta donde lo pusiste)
+
+Uso básico
+
+-Accede a index.php
+-Sube archivos desde el formulario
+-Visualiza la lista de medios subidos
