@@ -11,7 +11,7 @@ Diseñado con fines **educativos** y para demostrar la aplicación práctica de 
 ```
 
 
-## 🚀 Características principales
+ 🚀 Características principales
 - Subida y almacenamiento seguro de **archivos multimedia** (imágenes, audio, video).  
 - Organización por categorías o etiquetas.  
 - Visualización en una interfaz web simple.  
@@ -21,7 +21,7 @@ Diseñado con fines **educativos** y para demostrar la aplicación práctica de 
 
 ---
 
-## 📁 Estructura del proyecto
+ 📁 Estructura del proyecto
 ```bash
 mediaXm/
 ├── index.php               # Página principal
