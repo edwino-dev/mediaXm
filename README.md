@@ -64,7 +64,7 @@ return [
     'password' => '',
     'charset'  => 'utf8mb4',
 ];
-
+```
 4. Asegúrate que la carpeta uploads/ tenga permisos de escritura
 
  chmod -R 775 uploads/
