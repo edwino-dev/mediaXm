@@ -66,10 +66,10 @@ return [
 ];
 ```
 4. Asegúrate que la carpeta uploads/ tenga permisos de escritura
-
+```
  chmod -R 775 uploads/
 # O si estás en Windows (XAMPP/WAMP), hazlo manualmente desde el explorador o con icacls
-
+```
 5. Abre en el navegador: http://localhost/mediaXm/public/ (o la ruta donde lo pusiste)
 
 Uso básico
