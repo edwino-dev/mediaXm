@@ -58,8 +58,7 @@ Ideal para aprender arquitectura limpia en PHP puro y patrones GoF (Gang of Four
 
  ```bash
 
-      
-   return [
+return [
        'host'     => 'localhost',
        'dbname'   => 'media_xm',
        'user'     => 'root',
