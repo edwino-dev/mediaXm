@@ -66,14 +66,14 @@ Ideal para aprender arquitectura limpia en PHP puro y patrones GoF (Gang of Four
        'password' => '',
        'charset'  => 'utf8mb4',
    ];
+?>
 
 4. Asegúrate que la carpeta uploads/ tenga permisos de escritura
 
    ```bash
    chmod -R 775 uploads/
-5. hasta aqui
 
-6.. Abre en el navegador: http://localhost/mediaXm/public/ (o la ruta donde lo pusiste)
+5. Abre en el navegador: http://localhost/mediaXm/public/ (o la ruta donde lo pusiste)
 
 Uso básico
 
