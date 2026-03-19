@@ -8,10 +8,10 @@ Diseñado con fines **educativos** y para demostrar la aplicación práctica de 
 ![MIT](https://img.shields.io/badge/license-MIT-green?style=flat)
 ![Status](https://img.shields.io/badge/status-active-success?style=flat)
 
-```
 
 
- 🚀 Características principales
+
+## 🚀 Características principales
 - Subida y almacenamiento seguro de **archivos multimedia** (imágenes, audio, video).  
 - Organización por categorías o etiquetas.  
 - Visualización en una interfaz web simple.  
@@ -19,9 +19,9 @@ Diseñado con fines **educativos** y para demostrar la aplicación práctica de 
 - Separación de responsabilidades (**config**, **models**, **patterns**, **uploads**).  
 - Implementación práctica de **patrones de diseño** clásicos.  
 
----
 
- 📁 Estructura del proyecto
+
+## 📁 Estructura del proyecto
 ```bash
 mediaXm/
 ├── index.php               # Página principal
