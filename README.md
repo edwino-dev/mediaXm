@@ -1,103 +1,116 @@
-# mediaXm
+# 📂 mediaXm – Gestor de Archivos Multimedia
 
-**Gestor de Archivos Multimedia**  
-Sistema sencillo en PHP para organizar, subir, visualizar y gestionar música, videos e imágenes.
+Sistema ligero en **PHP** para organizar, subir, visualizar y gestionar música, videos e imágenes.  
+Diseñado con fines **educativos** y para demostrar la aplicación práctica de **patrones de diseño GoF** en un contexto real.
 
-![PHP](https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=flat&logo=php)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+`https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=flat&logo=php`  
+`https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white`  
+`https://img.shields.io/badge/license-MIT-green?style=flat`  
+`https://img.shields.io/badge/status-active-success?style=flat`
 
-**Estructura del proyecto**
-```
+---
+
+## 🚀 Características principales
+- Subida y almacenamiento seguro de **archivos multimedia** (imágenes, audio, video).  
+- Organización por categorías o etiquetas.  
+- Visualización en una interfaz web simple.  
+- Base de datos **MySQL/MariaDB** para metadatos (nombre, tipo, tamaño, fecha, etc.).  
+- Separación de responsabilidades (**config**, **models**, **patterns**, **uploads**).  
+- Implementación práctica de **patrones de diseño** clásicos.  
+
+---
+
+## 📁 Estructura del proyecto
+```bash
 mediaXm/
-├── index.php               # Pagina principal
+├── index.php               # Página principal
 ├── css/
 │   └── styles.css          # Estilos completos
 ├── config/
-    └── database.php          → Configuración (DB, rutas, etc.)
+│   └── database.php        # Configuración (DB, rutas, etc.)
 ├── models/
-     └──archivo.php           → Entidades y consultas a base de datos
+│   └── archivo.php         # Entidades y consultas a base de datos
 ├── patterns/
-    ├──adapter.php
-    ├──decorator.php
-    ├── observer.php
-    └── strategy.php         → Implementaciones de patrones de diseño
+│   ├── adapter.php
+│   ├── decorator.php
+│   ├── observer.php
+│   └── strategy.php        # Implementaciones de patrones de diseño
 ├── uploads/
-   └──images/
-       music/
-       video/              → Archivos multimedia subidos
-├── mediaManager.php       
-├── schema.sql             → Estructura de tablas MySQL
+│   ├── images/
+│   ├── music/
+│   └── video/              # Archivos multimedia subidos
+├── mediaManager.php        
+├── schema.sql              # Estructura de tablas MySQL
 └── README.md
 ```
-## ¿Qué es mediaXm?
 
-Un gestor de medios ligero y educativo que permite:
+---
 
-- Subir archivos multimedia (imágenes, audio, video)
-- Organizarlos por categorías o etiquetas
-- Visualizarlos en una interfaz web simple
-- Aplicar y demostrar **patrones de diseño** clásicos en un contexto real
+## 🧩 Patrones de diseño implementados
 
-Ideal para aprender arquitectura limpia en PHP puro y patrones GoF (Gang of Four).
+| Patrón       | Archivo                     | Uso principal                                                                 |
+|--------------|-----------------------------|-------------------------------------------------------------------------------|
+| **Singleton** | `patterns/Singleton.php`   | Conexión única a la base de datos (evita múltiples conexiones abiertas).      |
+| **Factory**   | `patterns/Factory.php`     | Creación de objetos Media (Image, Video, Audio) sin exponer lógica interna.   |
+| **Strategy**  | `patterns/Strategy.php`    | Procesamiento/validación según tipo de archivo (ej: compresión de imagen).    |
+| **Observer**  | `patterns/Observer.php`    | Notificación al subir un archivo (ej: generar thumbnail, loggear eventos).    |
 
-## Características principales
+---
 
-- Subida y almacenamiento seguro de archivos multimedia
-- Base de datos MySQL para metadatos (nombre, tipo, tamaño, fecha, etc.)
-- Separación de responsabilidades (models, config, lógica de negocio)
-- Demostración práctica de **patrones de diseño** en la carpeta `patterns/`
+## ⚙️ Instalación
 
-## Patrones de diseño implementados
-
-| Patrón       | Ubicación                     | ¿Dónde y por qué se usa?                                                                 |
-|--------------|-------------------------------|-------------------------------------------------------------------------------------------|
-| **Singleton** | `patterns/Singleton.php`     | Conexión única a la base de datos (evita múltiples conexiones abiertas)                   |
-| **Factory**   | `patterns/Factory.php`       | Crear diferentes tipos de objetos Media (Image, Video, Audio) sin exponer lógica         |
-| **Strategy**  | `patterns/Strategy.php`      | Diferentes formas de procesar/validar archivos según su tipo (ej: compresión de imagen vs video) |
-| **Observer**  | `patterns/Observer.php`      | Notificar cuando se sube un archivo (ej: generar thumbnail, enviar email, loggear)       |
-| ...           | (puedes ir agregando más)    | —                                                                                         |
-
-## Tecnologías utilizadas
-
-- PHP 8.1+
-- MySQL / MariaDB
-- HTML + CSS básico (puedes mejorar con Bootstrap/Tailwind)
-- PHP puro (sin frameworks pesados → ideal para aprender)
-
-## Instalación
-
-1. Clona el repositorio
-
+1. **Clona el repositorio**
    ```bash
    git clone https://github.com/edwino-dev/mediaXm.git
    cd mediaXm
-   
-2. Crea la base de datos y ejecuta el esquema
+   ```
 
+2. **Crea la base de datos y ejecuta el esquema**
    ```bash
    mysql -u root -p < schema.sql
-   
-3. Configura la conexión en `config/database.php`
+   ```
 
-```php
-return [
-    'host'     => 'localhost',
-    'dbname'   => 'media_xm',
-    'user'     => 'root',
-    'password' => '',
-    'charset'  => 'utf8mb4',
-];
-```
-4. Asegúrate que la carpeta uploads/ tenga permisos de escritura
-```bash
- chmod -R 775 uploads/
-# O si estás en Windows (XAMPP/WAMP), hazlo manualmente desde el explorador o con
-```
-5. Abre en el navegador: http://localhost/mediaXm/public/ (o la ruta donde lo pusiste)
+3. **Configura la conexión en `config/database.php`**
+   ```php
+   return [
+       'host'     => 'localhost',
+       'dbname'   => 'media_xm',
+       'user'     => 'root',
+       'password' => '',
+       'charset'  => 'utf8mb4',
+   ];
+   ```
 
-Uso básico
+4. **Permisos de escritura en la carpeta `uploads/`**
+   ```bash
+   chmod -R 775 uploads/
+   ```
+   *(En Windows, ajusta manualmente desde el explorador o propiedades de carpeta).*
 
-- Accede a index.php
-- Sube archivos desde el formulario
-- Visualiza la lista de medios subidos
+5. **Accede desde el navegador**
+   ```
+   http://localhost/mediaXm/index.php
+   ```
+
+---
+
+## 📖 Uso básico
+- Accede a `index.php`.  
+- Sube archivos desde el formulario.  
+- Visualiza la lista de medios subidos.  
+
+---
+
+## 🛠️ Tecnologías utilizadas
+- **PHP 8.1+**  
+- **MySQL / MariaDB**  
+- **HTML + CSS**  
+- **Patrones de diseño GoF**  
+
+---
+
+## 📜 Licencia
+Este proyecto está bajo la licencia **MIT**. Puedes usarlo, modificarlo y distribuirlo libremente.
+
+---
 
